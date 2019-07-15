@@ -8,11 +8,19 @@ using namespace std;
 
 // Fill in code to declare a structure called taxPayer that has three
 // members:	taxRate, income, and taxes — each of type float
+struct taxPayer {
+    double taxRate;
+    double income;
+    double taxes;
+};
+
 
 int main()
 {
 	// Fill in code to define an array named citizen which holds
 	// 5 taxPayers structures
+
+	taxPayer citizen[5];
 
 	cout << fixed << showpoint << setprecision(2);
 
@@ -25,15 +33,17 @@ int main()
 		cout << ": ";
 
 		// Fill in code to read in the income to the appropriate place
+        cin >> citizen[count].income;
 
 		cout << "Enter the tax rate for tax payer # " << (count + 1);
 		cout << ": ";
 
 		// Fill in code to read in the tax rate to the appropriate place
+        cin >> citizen[count].taxRate;
 
 		// Fill in code to compute the taxes for the citizen and store it
 		// in the appropriate place
-
+        citizen[count].taxes = citizen[count].taxRate * citizen[count].income;
 		cout << endl;
 	}
 
@@ -41,6 +51,7 @@ int main()
 
 	// Fill in code for the first line of a loop that will output the
 	// tax information
+	for (int index = 0; index < 5; index++)
 	{
 		cout << "Tax Payer # " << (index + 1) << ": " << "$ "
 		     << citizen[index].taxes << endl;
