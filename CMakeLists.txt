@@ -8,4 +8,6 @@ add_executable(array_struct.exe array_struct.cpp)
 add_executable(init_struct.exe init_struct.cpp)
 add_executable(nestedRect_struct.exe nestedRect_struct.cpp)
 add_executable(rect_struct.exe rect_struct.cpp)
-
+add_executable(11-1.exe 11-1.cpp)
+add_executable(11-2.exe 11-2.cpp)
+add_executable(11-3.exe 11-3.cpp)
